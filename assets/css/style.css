@@ -15,4 +15,9 @@ input[type=number]::-webkit-outer-spin-button {
     appearance: none;
     margin: 0; 
 }
-
+#successMessage {
+	display: none;
+	font-size: 70%;
+	color: green;
+	margin-bottom: 10px;
+}
