@@ -1,5 +1,5 @@
 /*sign up telefono 1 validacion*/
-$("#submitbutton").click(function(){
+$("#submitButton").click(function(){
 	var errorMessage = "";
 
 	var fieldsMissing = "";
