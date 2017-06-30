@@ -5,12 +5,39 @@
 	background-size: cover;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
-    display: flex;
+    -o-background-size: cover;    
 	width: 100%;
-	height: 100vh;
+	height: 100vh;	
 }
 
 #imagen img{
 	margin-top: 50px;
+	margin-bottom: 100%;
+}
+
+.boton{
+	background-color: transparent;
+	border: 1px solid white;
+	border-radius: 6px;	
+	width: 140px;
+	height: 50px;
+	font-size: 20px;
+	padding: 3px;	
+	margin-right: 10px;
+	color: white;
+}
+
+.boton-1{
+	background: linear-gradient(135deg, rgba(133,10,129,1) 0%, rgba(133,10,129,1) 46%, rgba(255,13,142,1) 100%);	
+	border-radius: 6px;	
+	border-style: none;
+	width: 140px;
+	height: 50px;
+	font-size: 20px;
+	padding: 5px 15px;	
+	color: white;		
+}
+
+a{
+	color: white;
 }
