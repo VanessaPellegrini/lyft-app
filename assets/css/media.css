@@ -1,11 +1,17 @@
-@media (min-width: 375px) and (max-width: 425px){
+@media (min-width: 375px) and (max-width: 424px){
 	#imagen img{
-		margin-bottom: 75%;
+		margin-bottom: 90%;
 	}
 }
 
-@media (min-width: 426px){
+@media (min-width: 425px) and (max-width: 767px){
 	#imagen img{
-		margin-bottom: 25%;		
+		margin-bottom: 80%;
+	}
+}
+
+@media (min-width: 768px){
+	#imagen img{
+		margin-bottom: 30%;		
 	}
 }
