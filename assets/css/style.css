@@ -58,3 +58,10 @@ select.countries{
 	height: 30px;
 }
 
+/*Estilos Sign Up Name and Email*/
+input#name {
+    display: block;
+    margin-bottom: 2px;
+    border: 1px solid gray;
+    width: 92%;
+}
