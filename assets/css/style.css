@@ -9,7 +9,7 @@ gris intenso sign up to drive: #728098
 *{
 	font-family: 'Roboto', sans-serif;
 }
-	
+
 /*Estilos index*/
 #imagen{
 	background-image: url(../img/fondo.png);	
@@ -110,9 +110,38 @@ select.countries{
 }
 
 /*Estilos Sign Up Name and Email*/
-input#name {
+input#name, input#email {
     display: block;
-    margin-bottom: 2px;
+    margin-bottom: 8px;
     border: 1px solid gray;
     width: 92%;
+    height: 30px;
+    border-radius: 3px;
+}
+
+input#name{
+	background: url(../img/user.png);
+	background-repeat: no-repeat; 
+	background-position: 2px 3px;
+	text-indent:30px;
+}
+
+input#email{
+	background: url(../img/mail.png);
+	background-repeat: no-repeat; 
+	background-position: 2px 3px;
+	text-indent:30px;
+}
+
+a.term{
+	color: #337ab7;
+}
+
+input.checkagree{
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+a.linkanterior{
+	color: black;
 }
