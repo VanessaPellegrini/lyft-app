@@ -26,9 +26,11 @@ $("#submitButton").click(function(){
 		$("#errorMessage").html(errorMessage);
 	} else {
 		alert("Your code to enter is:" + " LAB-" + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10));
-		$("#successMessage").show();
+		console.log(errorMessage);
 		$("#errorMessage").hide();
-		window.location.replace("ingresar_codigo_2.html");
+		window.location = "ingresar_codigo_2.html"
 	}
-
 });
+/*evento para pasar a la segunda parte de sign up
+*Al dar click a aceptar del alert redireccionar a window.location.replace("ingresar_codigo_2.html");
+*/
