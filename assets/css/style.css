@@ -104,7 +104,21 @@ select.countries{
     margin-bottom: 25px;
 	height: 30px;
 }
-
+/*estilos paises*/
+fieldset {
+    border: 0;
+}
+label {
+    display: block;
+}
+/* select with CSS avatar icons */
+option.avatar {
+    background-repeat: no-repeat !important;
+    padding-left: 20px;
+}
+.avatar .ui-icon {
+    background-position: left top;
+}
 /*Estilos Sign Up Name and Email*/
 input#name {
     display: block;
