@@ -17,8 +17,9 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!-- Fontawesome -->
 	<script src="https://use.fontawesome.com/d2c9b2c5c1.js"></script>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/media.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/common.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 <section id="" >
@@ -36,12 +37,13 @@
 						<option value="mexico">México</option>
 						<option value="peru">Perú</option>
 					</select>
-					<input type="number" name="telefono" id="telefono" placeholder="11234567" maxlength="9"/>
+					<input type="number" name="telefono" id="telefono" placeholder="11234567"/>
 					<p class="textuser">We'll send a text to verify your phone</p>
 					<input type="submit" id="submitButton" value="Next">
 				</form>
-				
 			</div>
+			<div id="errorMessage"></div>
+			<div id="successMessage">Sign Up Successful!!!</div>
 		</div>
 	</div>
 </section>
