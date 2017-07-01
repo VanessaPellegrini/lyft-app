@@ -1,6 +1,6 @@
 /*alert("hola");*/
 /*sign up telefono 1 validacion*/
-$("#submitButton").click(function(){
+$("#submitButton").click(function(e){
 	var errorMessage = "";
 	var fieldsMissing = "";
 
@@ -28,6 +28,7 @@ $("#submitButton").click(function(){
 		alert("Your code to enter is:" + " LAB-" + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10));
 		console.log(errorMessage);
 		$("#errorMessage").hide();
+		e.preventDefault();
 		window.location = "ingresar_codigo_2.html"
 	}
 });
