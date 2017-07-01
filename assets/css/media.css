@@ -1,1 +1,17 @@
-media.css
+@media (min-width: 375px) and (max-width: 424px){
+	#imagen img{
+		margin-bottom: 90%;
+	}
+}
+
+@media (min-width: 425px) and (max-width: 767px){
+	#imagen img{
+		margin-bottom: 80%;
+	}
+}
+
+@media (min-width: 768px){
+	#imagen img{
+		margin-bottom: 30%;		
+	}
+}

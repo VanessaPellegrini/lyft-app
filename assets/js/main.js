@@ -1,19 +1,23 @@
 /*sign up telefono 1 validacion*/
 $("#submitButton").click(function(){
 	var errorMessage = "";
-
 	var fieldsMissing = "";
 
-	if ($("#phone").val() == "") {
+	if ($("#telefono").val().length != 9) {
 
-		fieldsMissing += "<br>Telephone";
+		errorMessage += "<p> Your phone Number is not valid</p>";
 	}
 
+	if ($("#telefono").val() == "") {
+
+		fieldsMissing += "<br>Telefono";
+	}
+	
 	if (fieldsMissing != "") {
 		errorMessage += "<p>The following field(s) are missing" + fieldsMissing;
 	}	
 
-	if ($.isNumeric($("#phone").val()) == false) {
+	if ($.isNumeric($("#telefono").val()) == false) {
 		errorMessage += "<p> Your phone Number is not valid</p>";
 	}
 
