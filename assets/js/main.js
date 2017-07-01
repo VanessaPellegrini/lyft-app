@@ -96,7 +96,7 @@ $(document).ready(function () {
 	$("#submitBtnEmail").click(function(e){
 
   		function isChecked{
-  			return $(document).on("change", ".checkbox", function(){
+  			$(document).on("change", ".checkbox", function(){
 		  		if (this.checked) {
 		  			return true;
 		  		}else{
@@ -104,7 +104,7 @@ $(document).ready(function () {
 		  		}
   			});
   		};
-  		
+
 		function isEmail(email) {
   		var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
  		 return regex.test(email);
