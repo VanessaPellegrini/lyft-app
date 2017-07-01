@@ -106,11 +106,31 @@ select.countries{
 }
 /*estilos paises*/
 fieldset {
-    border: 0;
+   border: 0;
 }
 label {
-    display: block;
+   display: block;
 }
+ 
+/* select with custom icons */
+.ui-selectmenu-menu .ui-menu.customicons .ui-menu-item-wrapper {
+    padding: 0.5em 0 0.5em 3em;
+}
+.ui-selectmenu-menu .ui-menu.customicons .ui-menu-item .ui-icon {
+    height: 24px;
+    width: 24px;
+    top: 0.1em;
+}
+.ui-icon.video {
+  background: url("../img/cl.png") 0 0 no-repeat;
+}
+.ui-icon.podcast {
+    background: url("../img/flag_mex.png") 0 0 no-repeat;
+}
+.ui-icon.rss {
+    background: url("../img/flag_pe.png") 0 0 no-repeat;
+}
+ 
 /* select with CSS avatar icons */
 option.avatar {
     background-repeat: no-repeat !important;

@@ -20,21 +20,11 @@ $(document).ready(function () {
         return li.append( wrapper ).appendTo( ul );
       }
     });
- 
-    $( "#filesA" )
-      .iconselectmenu()
-      .iconselectmenu( "menuWidget" )
-        .addClass( "ui-menu-icons" );
- 
-    $( "#filesB" )
-      .iconselectmenu()
-      .iconselectmenu( "menuWidget" )
-        .addClass( "ui-menu-icons customicons" );
- 
+
     $( "#people" )
       .iconselectmenu()
       .iconselectmenu( "menuWidget")
-        .addClass( "ui-menu-icons avatar" );
+       .addClass( "ui-menu-icons avatar" );
 	});
 	/*sign up telefono validacion*/
 	$("#submitButton").click(function(e){
