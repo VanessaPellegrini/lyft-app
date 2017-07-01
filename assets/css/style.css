@@ -6,6 +6,10 @@ morado opaco set pickup: #8179A8
 morado intenso lift is not yet availabe: #352782
 gris intenso sign up to drive: #728098
 */
+*{
+	font-family: 'Roboto', sans-serif;
+	
+}
 
 /*Estilos Sign Up Teléfono*/
 h3.titulo {
