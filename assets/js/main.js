@@ -28,6 +28,7 @@ $("#submitButton").click(function(){
 		alert("Your code to enter is:" + " LAB-" + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10));
 		$("#successMessage").show();
 		$("#errorMessage").hide();
+		window.location.replace("ingresar_codigo_2.html");
 	}
 
 });
