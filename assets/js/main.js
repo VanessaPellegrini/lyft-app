@@ -90,6 +90,39 @@ $(document).ready(function () {
 			window.location = "sign_up_name_3.html";
 		}
 	});
+	/*validar email y nombre*/
+	/*verificacion del codigo y creacion del usuario*/
+	$("#submitBtnEmail").click(function(e){
+		function isEmail(email) {
+  		var emailTest = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+ 		 return emailTest.test(email);
+		}
+
+		var errorMessage = "";
+		var fieldsMissing = "";
+
+		if ($("#email").val() == "") {
+
+			fieldsMissing += "<br>Email";
+		}
+		
+		if ($("#name").val() == "") {
+
+			fieldsMissing += "<br>Code";
+		}
+
+		if (fieldsMissing != "") {
+			errorMessage += "<p>The following field(s) are missing" + fieldsMissing;
+		}
+
+		if (errorMessage != "") {
+			$("#errorMessage").html(errorMessage);
+		} else {
+			$("#errorMessage").hide();
+			e.preventDefault();
+			window.location = "sign_up_name_3.html";
+		}
+	});
 });
 /*evento para pasar a la segunda parte de sign up
 *Al dar click a aceptar del alert redireccionar a window.location.replace("ingresar_codigo_2.html");
