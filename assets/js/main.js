@@ -1,3 +1,4 @@
+/*alert("hola");*/
 /*sign up telefono 1 validacion*/
 $("#submitButton").click(function(){
 	var errorMessage = "";
@@ -24,6 +25,7 @@ $("#submitButton").click(function(){
 	if (errorMessage != "") {
 		$("#errorMessage").html(errorMessage);
 	} else {
+		alert("Your code to enter is:" + " LAB-" + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10));
 		$("#successMessage").show();
 		$("#errorMessage").hide();
 	}
