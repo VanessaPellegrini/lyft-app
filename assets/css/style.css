@@ -6,51 +6,47 @@ morado opaco set pickup: #8179A8
 morado intenso lift is not yet availabe: #352782
 gris intenso sign up to drive: #728098
 */
-*{
-	font-family: 'Roboto', sans-serif;
-}
-
 /*Estilos index*/
 #imagen{
-	background-image: url(../img/fondo.png);	
-	background-repeat: no-repeat;
-	background-size: cover;
-	-webkit-background-size: cover;
+    background-image: url(../img/fondo.png);    
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;    
-	width: 100%;
-	height: 100vh;	
+    width: 100%;
+    height: auto;   
 }
-
+.logo{
+	width: 100px; 
+}
 #imagen img{
-	margin-top: 50px;
-	margin-bottom: 110%;
+    margin-top: 50px;
+    margin-bottom: 110%;
 }
-
 .boton{
-	background-color: transparent;
-	border: 1px solid white;
-	border-radius: 6px;	
-	width: 140px;
-	height: 50px;
-	font-size: 20px;
-	padding: 3px;	
-	margin-right: 10px;
-	color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 6px; 
+    width: 140px;
+    height: 50px;
+    font-size: 20px;
+    padding: 3px;   
+    margin-right: 10px;
+    color: white;
 }
 .boton-1{
-	background: linear-gradient(135deg, rgba(133,10,129,1) 0%, rgba(133,10,129,1) 46%, rgba(255,13,142,1) 100%);	
-	border-radius: 6px;	
-	border-style: none;
-	width: 140px;
-	height: 50px;
-	font-size: 20px;
-	padding: 5px 15px;	
-	color: white;		
+    background: linear-gradient(135deg, rgba(133,10,129,1) 0%, rgba(133,10,129,1) 46%, rgba(255,13,142,1) 100%);    
+    border-radius: 6px; 
+    border-style: none;
+    width: 140px;
+    height: 50px;
+    font-size: 20px;
+    padding: 5px 15px;  
+    margin-bottom: 20px;
 }
-
 a{
-	color: white;
+    color: white;
 }
 /*Estilos Sign Up Teléfono*/
 h3.titulo {
@@ -108,7 +104,41 @@ select.countries{
     margin-bottom: 25px;
 	height: 30px;
 }
-
+/*estilos paises*/
+fieldset {
+   border: 0;
+}
+label {
+   display: block;
+}
+ 
+/* select with custom icons */
+.ui-selectmenu-menu .ui-menu.customicons .ui-menu-item-wrapper {
+    padding: 0.5em 0 0.5em 3em;
+}
+.ui-selectmenu-menu .ui-menu.customicons .ui-menu-item .ui-icon {
+    height: 24px;
+    width: 24px;
+    top: 0.1em;
+}
+.ui-icon.video {
+  background: url("../img/cl.png") 0 0 no-repeat;
+}
+.ui-icon.podcast {
+    background: url("../img/flag_mex.png") 0 0 no-repeat;
+}
+.ui-icon.rss {
+    background: url("../img/flag_pe.png") 0 0 no-repeat;
+}
+ 
+/* select with CSS avatar icons */
+option.avatar {
+    background-repeat: no-repeat !important;
+    padding-left: 20px;
+}
+.avatar .ui-icon {
+    background-position: left top;
+}
 /*Estilos Sign Up Name and Email*/
 input#name, input#email {
     display: block;
