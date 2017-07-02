@@ -92,7 +92,15 @@ input#telefono[type=number]::-webkit-outer-spin-button {
     height: 60px;
     font-size: 20px;
 }
-
+input#submitBtnEmail {
+    background-color: #FC1EBD;
+    border-bottom: none;
+    border: none;
+    color: #fff;
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+}
 p.textuser {
     font-size: 12px;
     margin-bottom: 71px;
@@ -104,15 +112,68 @@ select.countries{
     margin-bottom: 25px;
 	height: 30px;
 }
-
+/*estilos paises*/
+fieldset {
+   border: 0;
+}
+label {
+   display: block;
+}
+ 
+/* select with custom icons */
+.ui-selectmenu-menu .ui-menu.customicons .ui-menu-item-wrapper {
+    padding: 0.5em 0 0.5em 3em;
+}
+.ui-selectmenu-menu .ui-menu.customicons .ui-menu-item .ui-icon {
+    height: 24px;
+    width: 24px;
+    top: 0.1em;
+}
+.ui-icon.video {
+  background: url("../img/cl.png") 0 0 no-repeat;
+}
+.ui-icon.podcast {
+    background: url("../img/flag_mex.png") 0 0 no-repeat;
+}
+.ui-icon.rss {
+    background: url("../img/flag_pe.png") 0 0 no-repeat;
+}
+ 
+/* select with CSS avatar icons */
+option.avatar {
+    background-repeat: no-repeat !important;
+    padding-left: 20px;
+}
+.avatar .ui-icon {
+    background-position: left top;
+}
 /*Estilos Sign Up Name and Email*/
-input#name {
+input#name, input#email {
     display: block;
-    margin-bottom: 2px;
+    margin-bottom: 8px;
     border: 1px solid gray;
     width: 92%;
+    height: 30px;
+    border-radius: 3px;
 }
 
+input#name{
+	background: url(../img/user.png);
+	background-repeat: no-repeat; 
+	background-position: 2px 3px;
+	text-indent:30px;
+}
+
+input#email{
+	background: url(../img/mail.png);
+	background-repeat: no-repeat; 
+	background-position: 2px 3px;
+	text-indent:30px;
+}
+
+a.term{
+	color: #337ab7;
+}
 /*Estilos index 2*/
 
 input#submitBtnCod{
@@ -129,4 +190,19 @@ input#submitBtnCod{
 span.glyphicon-user{
     color: #FC1EBD;
     font-size: 15px;
+}
+=======
+input.checkagree{
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+a.linkanterior{
+	color: black;
+}
+input#email {
+    display: block;
+    margin-bottom: 2px;
+    border: 1px solid gray;
+    width: 92%;
 }
