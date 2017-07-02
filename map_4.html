@@ -24,31 +24,24 @@
 		</div>
 	</div>
 </menu>
-<header>
+<section id="mapa" >
 	<div class="container">
 		<div class="row">
-			
-		</div>
-	</div>
-</header>
-<section id="" >
-	<div class="container">
-		<div class="row">
-			
+			<div class="hidden-lg hidden-md col-sm-12 col-xs-12 text-center mapa-lift" id="map">
+			<!--mapa-->
+			</div>
+			<div class="hidden-lg hidden-md text-center col-sm-12 col-xs-12 align-bottom form">
+				<input class="input-destino" id="destino" placeholder="Ingrese su destino"><br><br>
+				<button type="button" class="btn btn-default">Marcar Ruta</button>
+			</div>
 		</div>
 	</div>
 </section>
-<footer>
-	<div class="container">
-		<div class="row">
-			
-		</div>
-	</div>
-</footer>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Bootstrap Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjQQJ5Ev6AINQct8KF2U4pWfyB26H31zQ&libraries=places&callback=initMap"></script>
 </body>
 </html>
