@@ -1,33 +1,5 @@
 /*alert("hola");*/
-$(document).ready(function () {
-	
-	/*pluggin para las banderas
-	$( function() {
-    	$.widget( "custom.iconselectmenu", $.ui.selectmenu, {
-     	_renderItem: function( ul, item ) {
-        var li = $( "<li>" ),
-          wrapper = $( "<div>", { text: item.label } );
- 
-        if ( item.disabled ) {
-          li.addClass( "ui-state-disabled" );
-        }
- 
-        $( "<span>", {
-          style: item.element.attr( "data-style" ),
-          "class": "ui-icon " + item.element.attr( "data-class" )
-        })
-          .appendTo( wrapper );
- 
-        return li.append( wrapper ).appendTo( ul );
-      }
-    });
-
-    $( "#people" )
-      .iconselectmenu()
-      .iconselectmenu( "menuWidget")
-       .addClass( "ui-menu-icons avatar" );
-	});
-	*/
+$(document).ready(function(){
 	/*sign up telefono validacion*/
 	$("#submitButton").click(function(e){
 		var errorMessage = "";
@@ -49,7 +21,6 @@ $(document).ready(function () {
 		}	
 
 		if ($.isNumeric($("#telefono").val()) == false) {
-			errorMessage += "<p> Your phone Number is not valid</p>";
 			e.preventDefault();
 			errorMessage += "<p> Your phone Number is not valid</p>";
 		}
@@ -84,7 +55,7 @@ $(document).ready(function () {
 		var errorMessage = "";
 		var fieldsMissing = "";
 
-		if ($("#input-cod").val().length != 6) {
+		if ($("#input-cod").val().length != 3) {
 			e.preventDefault();
 			errorMessage += "<p> Your code is not valid</p>";
 		}
@@ -110,19 +81,14 @@ $(document).ready(function () {
 		} else {
 			
 			alert("Your code to enter is:" + " LAB-" + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10));
-			$("#successMessage").show();
-			$("#errorMessage").hide();
+			e.preventDefault();
+			window.location = "sign_up_name_3.html";
 		}
-	})
+	});
 
 	$(".button-1").click(function(){
 		if("#validador" == " "){
 			alert("Ingrese código");
-		}
-	})
-			$("#errorMessage").hide();
-			e.preventDefault();
-			window.location = "sign_up_name_3.html";
 		}
 	});
 	/*validar email y nombre*/
@@ -187,5 +153,5 @@ $(document).ready(function () {
 			e.preventDefault();
 			window.location = "map_4.html";
 		}
+	});	
 });
-
