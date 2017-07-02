@@ -34,16 +34,17 @@ $(document).ready(function () {
 		var fieldsMissing = "";
 
 		if ($("#telefono").val().length != 9) {
-
+			e.preventDefault();
 			errorMessage += "<p> Your phone Number is not valid</p>";
 		}
 
 		if ($("#telefono").val() == "") {
-
+			e.preventDefault();
 			fieldsMissing += "<br>Telefono";
 		}
 	
 		if (fieldsMissing != "") {
+			e.preventDefault();
 			errorMessage += "<p>The following field(s) are missing" + fieldsMissing;
 		}	
 
@@ -84,21 +85,22 @@ $(document).ready(function () {
 		var fieldsMissing = "";
 
 		if ($("#input-cod").val().length != 6) {
-
+			e.preventDefault();
 			errorMessage += "<p> Your code is not valid</p>";
 		}
 
 		if ($("#input-cod").val() == "") {
-
+			e.preventDefault();
 			fieldsMissing += "<br>Code";
 		}
 		
 		if ($("#user").val() == "") {
-
+                        e.preventDefault();
 			fieldsMissing += "<br>Code";
 		}
 
 		if (fieldsMissing != "") {
+			e.preventDefault();
 			errorMessage += "<p>The following field(s) are missing" + fieldsMissing;
 
 		}
