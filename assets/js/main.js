@@ -155,6 +155,10 @@ $(document).ready(function(){
 	var userNameValue = document.getElementById("user").value;
 	var nameValue = document.getElementById("name").value;
 	var emailValue = document.getElementById("email").value;
+	/* Guardamos Datos */
+	localStorage.setItem("userName",userNameValue);
+	localStorage.setItem("name",nameValue);
+	localStorage.setItem("email",emailValue);
 	
 
 });
