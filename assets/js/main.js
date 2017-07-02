@@ -1,33 +1,5 @@
 /*alert("hola");*/
 $(document).ready(function () {
-	
-	/*pluggin para las banderas
-	$( function() {
-    	$.widget( "custom.iconselectmenu", $.ui.selectmenu, {
-     	_renderItem: function( ul, item ) {
-        var li = $( "<li>" ),
-          wrapper = $( "<div>", { text: item.label } );
- 
-        if ( item.disabled ) {
-          li.addClass( "ui-state-disabled" );
-        }
- 
-        $( "<span>", {
-          style: item.element.attr( "data-style" ),
-          "class": "ui-icon " + item.element.attr( "data-class" )
-        })
-          .appendTo( wrapper );
- 
-        return li.append( wrapper ).appendTo( ul );
-      }
-    });
-
-    $( "#people" )
-      .iconselectmenu()
-      .iconselectmenu( "menuWidget")
-       .addClass( "ui-menu-icons avatar" );
-	});
-	*/
 	/*sign up telefono validacion*/
 	$("#submitButton").click(function(e){
 		var errorMessage = "";
@@ -47,7 +19,42 @@ $(document).ready(function () {
 			e.preventDefault();
 			errorMessage += "<p>The following field(s) are missing" + fieldsMissing;
 		}	
+$(document).ready(function(){
+	/*sign up telefono validacion*/
+	$("#submitButton").click(function(e){
+		var errorMessage = "";
+		var fieldsMissing = "";
 
+		if ($("#telefono").val().length != 9) {
+			e.preventDefault();
+			errorMessage += "<p> Your phone Number is not valid</p>";
+		}
+
+		if ($("#telefono").val() == "") {
+			e.preventDefault();
+			fieldsMissing += "<br>Telefono";
+		}
+	
+		if (fieldsMissing != "") {
+			e.preventDefault();
+			errorMessage += "<p>The following field(s) are missing" + fieldsMissing;
+		}	
+
+		if ($.isNumeric($("#telefono").val()) == false) {
+			e.preventDefault();
+			errorMessage += "<p> Your phone Number is not valid</p>";
+		}
+
+		if ($("#telefono").val() == "") {
+			e.preventDefault();
+			fieldsMissing += "<br>Phone";
+		}
+		
+		if (fieldsMissing != "") {
+			e.preventDefault();
+			errorMessage += "<p>The following field(s) are missing" + fieldsMissing;
+		}	
+    
 		if ($.isNumeric($("#telefono").val()) == false) {
 			e.preventDefault();
 			errorMessage += "<p> Your phone Number is not valid</p>";
@@ -67,34 +74,41 @@ $(document).ready(function () {
 	$("#submitBtnCod").click(function(e){
 		var errorMessage = "";
 		var fieldsMissing = "";
-
-		if ($("#input-cod").val().length != 6) {
-
+    
+		if ($("#input-cod").val().length != 3) {
+			e.preventDefault();
 			errorMessage += "<p> Your code is not valid</p>";
 		}
 
 		if ($("#input-cod").val() == "") {
-
+			e.preventDefault();
 			fieldsMissing += "<br>Code";
 		}
 		
 		if ($("#user").val() == "") {
-
+      e.preventDefault();
 			fieldsMissing += "<br>Code";
 		}
 
 		if (fieldsMissing != "") {
+			e.preventDefault();
 			errorMessage += "<p>The following field(s) are missing" + fieldsMissing;
 		}
 
 		if (errorMessage != "") {
 			$("#errorMessage").html(errorMessage);
 		} else {
-			$("#errorMessage").hide();
+			alert("Your code to enter is:" + " LAB-" + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10));
 			e.preventDefault();
 			window.location = "sign_up_name_3.html";
 		}
 	});
+	$(".button-1").click(function(){
+		if("#validador" == " "){
+			alert("Ingrese código");
+		}
+	});
+
 	/*validar email y nombre*/
 	$("#submitBtnEmail").click(function(e){
 
@@ -171,5 +185,9 @@ $(document).ready(function () {
 				$('#casillaprofile').innerHTML = "Name: " + nombre_ls + "<br/> User: " + usuario_ls + "<br/> Email: " + email_ls;
 			};
 		}
-	
+		
+	/*plugin chosen parte vane perez*/
+		$(".my-select").chosen({width:"15%"});
+		});	
+
 });
