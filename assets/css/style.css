@@ -191,7 +191,7 @@ span.glyphicon-user{
     color: #FC1EBD;
     font-size: 15px;
 }
-=======
+
 input.checkagree{
 	margin-top: 30px;
 	margin-bottom: 60px;
@@ -200,9 +200,24 @@ input.checkagree{
 a.linkanterior{
 	color: black;
 }
+
 input#email {
     display: block;
     margin-bottom: 2px;
     border: 1px solid gray;
     width: 92%;
+}
+/*profile*/
+
+#fotoprof{
+    background-image: url(../img/profile.JPG);
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+
+}
+
+#edit{
+    margin-top: 10%;
+    margin-right: 10%;
 }
