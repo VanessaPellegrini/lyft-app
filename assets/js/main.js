@@ -158,4 +158,18 @@ $(document).ready(function () {
 			window.location = "map_4.html";
 		}
 	});
+
+	/*Datos del localStorage*/
+		/*Captura de datos escrito en los inputs*/        
+        var nombre_ls = $('#name').val();
+        var usuario_ls = $('#user').val();
+        var email_ls = $('#email').val();        
+
+        /*Insertar datos en View-Profile*/
+        function insertarDatos(){
+			if ((nombre_ls != undefined) && (usuario_ls != undefined) && (email_ls != undefined)) {
+				$('#casillaprofile').innerHTML = "Name: " + nombre_ls + "<br/> User: " + usuario_ls + "<br/> Email: " + email_ls;
+			};
+		}
+	
 });
