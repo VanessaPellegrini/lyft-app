@@ -179,9 +179,9 @@ function initMap(){
 		longitud = posicion.coords.longitude;
 		var miUbicacion = new google.maps.Marker({
 			position: {lat:latitud, lng:longitud},
-			animation: google.maps.Animation.DROP,
+			animation: google.maps.Animation.BOUNCE,
 			map: map, 
-			icon: "assets/img/facebook-placeholder.png"
+			icon: "assets/img/circulo.png"
 		});
 		map.setZoom(17);
 		map.setCenter({lat:latitud, lng:longitud});
