@@ -175,3 +175,12 @@ input.checkagree{
 a.linkanterior{
 	color: black;
 }
+/*profile*/
+
+#fotoprof{
+    background-image: url(../img/profile.JPG);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+
+}
