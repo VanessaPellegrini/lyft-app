@@ -196,3 +196,31 @@ function initMap(){
 google.maps.event.addDomListener(window, 'load', initialize);
 buscar();
 }
+/*
+var directionsDisplay = new google.maps.DirectionsRenderer();
+		var directionsService = new google.maps.DirectionsService();
+		//document.getElementById("desde").addEventListener("change", onChangeHandler);
+    	document.getElementById("destino").addEventListener("change", onChangeHandler);
+    function lineaRuta(directionsService, directionsDisplay) {
+        directionsService.route({
+            origin: miUbicacion,
+            destination: document.getElementById('destino').value,
+            travelMode: "DRIVING"
+            },
+        function(response, status) {
+            if (status === "OK") {
+                directionsDisplay.setDirections(response);
+            } else {
+                window.alert("Ruta no disponible"+ status);
+            }
+        });
+    }
+    	directionsDisplay.setMap(map);
+        //onChangeHandler = Agregar una propiedad de seguimiento a una definición de lenguaje específico de dominio
+        var onChangeHandler = function(){
+            //Servicio de indicaciones
+        lineaRuta(directionsService, directionsDisplay);
+    }; 
+    
+    document.getElementById("ruta").addEventListener("click",onChangeHandler); 
+}*/

@@ -195,3 +195,31 @@ input#email {
     height: 100vh;
     padding: 0;
 }
+.form{
+    position: absolute;
+    bottom: 5%;
+    width: 95%;
+    height: auto;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+.form input{
+    width: 105%;
+    height: 60px;
+    border-radius: 13px;
+}
+.form button{
+    width: 105%;
+    height: 60px;
+    border-radius: 13px;
+    color: white;
+    background-color: #8179A8;
+    font-size: 22px;
+    border-color: #adadad;
+
+}
+.btn-default:hover{
+    color: #8179A8;
+    background-color: white;
+    border-color: #adadad;
+}
