@@ -32,15 +32,20 @@
 	</div>
 </header>
 <div class="container">
-	<section id="profile">
-
-			<div class="row" id="fotoprof">
-			<div class="col-lg-12 datos text-right">
-				<button type="button" class="btn btn-primary" id="edit" onclick="guardarDatos()" value="Guardar datos">Edit Profile</button>
+<section id="profile">
+		<div class="row" id="fotoprof">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 datos text-right">
+				<button type="button" class="btn btn-primary" id="edit" onclick="guardarDatos()" value="Guardar datos" data-toggle="modal" href="#ventana1" >Edit Profile</button>
 			</div>
 		</div>
+
+	<div class="modal fade ccol-lg-12 col-md-12 col-sm-12 col-xs-12" id="ventana1">
+	<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+		<div class="mostrar">
 		<div class="row">
-			<div class="col-lg-12 datos text-center">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 datos text-center">
 				<div class="form-group">
 					<label for="usr">Name:</label>
 					<input type="text" class="form-control1" id="nombre">
@@ -49,7 +54,7 @@
 		</div>
 
 		<div class="row">
-			<div class="col-lg-12 datos text-center">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 datos text-center">
 				<div class="form-group">
 					<label for="usr">Date:</label>
 					<input type="text" class="form-control1" id="fecha">
@@ -58,31 +63,40 @@
 		</div>
 
 		<div class="row">
-			<div class="col-lg-12 datos text-center">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 datos text-center">
 				<div class="form-group">
 					<label for="usr">From city:</label>
 					<input type="text" class="form-control1" id="city">
 				</div>
 			</div>
 		</div>
-		
-
-			<div class="row">
-			<div class="col-lg-12 datos text-center">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 datos text-center">
 				<div class="form-group">
 					<label for="usr">Favoryty Music:</label>
 					<input type="text" class="form-control1" id="music">
 				</div>
-			</div>
 		</div>
+		</div>
+	</div>
+	</div>
+	<!--  VENTANA -->
+			<div class="modal-footer">
+				<button type="button" class="btn btn-success" data-dismiss="modal">Cerrar</button>
+			</div>
+	</div>
+	</div>
+	</div>
+
+	
 
 		<div class="row">
-			<div class="col-lg-12 text-center">
-				<p id="datos">imprime datos</p>
-				<button type="button" class="btn btn-primary" onclick="recuperarDatos()" value="Recuperar datos">Imprime datos</button>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+				<p id="datos"></p>
+				<button type="button" class="btn btn-primary" onclick="recuperarDatos()" value="Recuperar datos">Your Profile</button>
 			</div>
 		</div>
-	</section>
+</section>
 <footer>
 	<div class="container">
 		<div class="row">
