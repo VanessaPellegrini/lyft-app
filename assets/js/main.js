@@ -34,24 +34,27 @@ $(document).ready(function () {
 		var fieldsMissing = "";
 
 		if ($("#telefono").val().length != 9) {
-
+			e.preventDefault();
 			errorMessage += "<p> Your phone Number is not valid</p>";
 		}
 
 		if ($("#telefono").val() == "") {
-
+			e.preventDefault();
 			fieldsMissing += "<br>Phone";
 		}
 		
 		if (fieldsMissing != "") {
+			e.preventDefault();
 			errorMessage += "<p>The following field(s) are missing" + fieldsMissing;
 		}	
 
 		if ($.isNumeric($("#telefono").val()) == false) {
+			e.preventDefault();
 			errorMessage += "<p> Your phone Number is not valid</p>";
 		}
 
 		if (errorMessage != "") {
+			e.preventDefault();
 			$("#errorMessage").html(errorMessage);
 		} else {
 			alert("Your code to enter is:" + " LAB-" + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10));
@@ -95,7 +98,7 @@ $(document).ready(function () {
 	/*validar email y nombre*/
 	$("#submitBtnEmail").click(function(e){
 
-  		function isChecked{
+  		/*function isChecked{
   			$(document).on("change", ".checkbox", function(){
 		  		if (this.checked) {
 		  			return true;
@@ -103,7 +106,7 @@ $(document).ready(function () {
 		  			return false;
 		  		}
   			});
-  		};
+  		};*/
 
 		function isEmail(email) {
   		var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -143,9 +146,9 @@ $(document).ready(function () {
 			errorMessage += "<p>Your name and lastname are not valid</p>";
 		}
 
-		if ($("#checkbox").val() = checked){
+		/*if ($("#checkbox").val() = checked){
 
-		}
+		}*/
 
 		if (errorMessage != "") {
 			$("#errorMessage").html(errorMessage);
