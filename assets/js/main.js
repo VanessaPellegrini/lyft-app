@@ -108,3 +108,4 @@ function guardarDatos(){
 function recuperarDatos(){
 		document.getElementById("datos").innerHTML = "Nombre: " + localStorage.nombre + "<br/> Date: " + localStorage.fecha + "<br/> From: " + localStorage.city + "<br/> Music favorite: " + localStorage.music;
 }
+
