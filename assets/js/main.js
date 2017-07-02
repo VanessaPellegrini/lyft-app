@@ -64,11 +64,6 @@ $(document).ready(function(){
 			e.preventDefault();
 			fieldsMissing += "<br>Code";
 		}
-		
-		if ($("#user").val() == "") {
-      e.preventDefault();
-			fieldsMissing += "<br>Code";
-		}
 
 		if (fieldsMissing != "") {
 			e.preventDefault();
