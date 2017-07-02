@@ -149,16 +149,24 @@ $(document).ready(function(){
 	});
 	/*plugin chosen parte vane perez*/
 	$(".my-select").chosen({width:"15%"});
+
+	/***** seccion profile *****/
+	/* Valores */
+	var userNameValue = document.getElementById("user").value;
+	var nameValue = document.getElementById("name").value;
+	var emailValue = document.getElementById("email").value;
+	
+
 });
 
 /*evento para pasar a la segunda parte de sign up
 *Al dar click a aceptar del alert redireccionar a window.location.replace("ingresar_codigo_2.html");
 
 
-/*seccion profile*/
 
 
-function guardarDatos(){
+
+/*function guardarDatos(){
 	localStorage.nombre= document.getElementById("nombre").value;
 	localStorage.fecha= document.getElementById("fecha").value;
 	localStorage.city= document.getElementById("city").value;
@@ -168,5 +176,6 @@ function guardarDatos(){
 function recuperarDatos(){
 		document.getElementById("datos").innerHTML = "Nombre: " + localStorage.nombre + "<br/> Date: " + localStorage.fecha + "<br/> From: " + localStorage.city + "<br/> Music favorite: " + localStorage.music;
 }
+*/
 
 
