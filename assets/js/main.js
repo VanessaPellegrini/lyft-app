@@ -93,4 +93,18 @@ $(document).ready(function () {
 });
 /*evento para pasar a la segunda parte de sign up
 *Al dar click a aceptar del alert redireccionar a window.location.replace("ingresar_codigo_2.html");
-*/
+
+
+/*seccion profile*/
+
+
+function guardarDatos(){
+	localStorage.nombre= document.getElementById("nombre").value;
+	localStorage.fecha= document.getElementById("fecha").value;
+	localStorage.city= document.getElementById("city").value;
+	localStorage.music= document.getElementById("music").value;
+}
+
+function recuperarDatos(){
+		document.getElementById("datos").innerHTML = "Nombre:" + localStorage.nombre + "<br/> Date: " + localStorage.fecha + "<br/> From: " + localStorage.city + "<br/> Music favorite: " + localStorage.music;
+}
