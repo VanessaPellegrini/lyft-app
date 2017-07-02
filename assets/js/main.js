@@ -159,7 +159,13 @@ $(document).ready(function(){
 	localStorage.setItem("userName",userNameValue);
 	localStorage.setItem("name",nameValue);
 	localStorage.setItem("email",emailValue);
-	
+	/* Mostramos Datos En Div */
+	var contDatos = document.getElementById("user-data");
+	var userName = localStorage.getItem("userName");
+	var textUserName = document.createTextNode(userName);
+	var contUserNameText = document.createElement("h1");//Referencia
+	contUserNameText.appendChild("textUserName");
+	contDatos.appendChild(contUserNameText);
 
 });
 
