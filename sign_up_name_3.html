@@ -7,6 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Lyft App">
 	<meta name="author" content="LYFT APP">
+	<!-- jQuey smoothness -->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
+	<!-- Google Font -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet"> 
 	<!-- Bootstrap Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -17,34 +20,29 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/common.css">
 </head>
 <body>
-<menu>
+<section>
 	<div class="container">
 		<div class="row">
-			
-		</div>
-	</div>
-</menu>
-<header>
-	<div class="container">
-		<div class="row">
-			
-		</div>
-	</div>
-</header>
-<section id="" >
-	<div class="container">
-		<div class="row">
-			
+			<div class="col-xs-12 signupname text-center">
+				<a href="sign_up_telefono_1.html" class="linkanterior"><i class="fa fa-chevron-left flechaleft" aria-hidden="true"></i></a>
+				<h3 class="titulo">Sign up</h3>
+				<h5 class="subtitulo">Join now free ride credit</h5>
+				<hr>
+				<form>
+					<input type="text" name="name" id="name" placeholder="Fist Name      Last Name" / required>
+					<input type="text" name="name" id="email" placeholder="Email" required/>
+					<input type="checkbox" name="iagree" value="iagree" required id="checkbox"> I agree to Lyft's<br><a href="#" class="term">Term of Service</a>
+					<input type="submit" id="submitBtnEmail" value="Next">
+				</form>
+			</div>
+			<div id="errorMessage"></div>
 		</div>
 	</div>
 </section>
-<footer>
-	<div class="container">
-		<div class="row">
-			
-		</div>
-	</div>
-</footer>
+<!-- jQuery 3.2.1-->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!-- jQuery ui-->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Bootstrap Latest compiled and minified JavaScript -->
