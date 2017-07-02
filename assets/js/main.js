@@ -1,24 +1,4 @@
 /*alert("hola");*/
-$(document).ready(function () {
-	/*sign up telefono validacion*/
-	$("#submitButton").click(function(e){
-		var errorMessage = "";
-		var fieldsMissing = "";
-
-		if ($("#telefono").val().length != 9) {
-			e.preventDefault();
-			errorMessage += "<p> Your phone Number is not valid</p>";
-		}
-
-		if ($("#telefono").val() == "") {
-			e.preventDefault();
-			fieldsMissing += "<br>Phone";
-		}
-		
-		if (fieldsMissing != "") {
-			e.preventDefault();
-			errorMessage += "<p>The following field(s) are missing" + fieldsMissing;
-		}	
 $(document).ready(function(){
 	/*sign up telefono validacion*/
 	$("#submitButton").click(function(e){
@@ -172,8 +152,6 @@ $(document).ready(function(){
 			window.location = "map_4.html";
 		}
 	});
-
 	/*plugin chosen parte vane perez*/
 	$(".my-select").chosen({width:"15%"});
-	});	
 });
