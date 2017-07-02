@@ -17,17 +17,26 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/common.css">
 </head>
 <body>
-	<div class="container">
-		<div class="row" align="center">
-			<div class="col-xs-sm-12" id="box">
-				<i class="fa fa-chevron-left flechaleft" aria-hidden="true" href="index.html"></i>
-				<h4>Ingresa tu código</h4>
-				<hr><br>
-				<p><em>LAB- </em><input type="text" id="validador"></p>
-				<button class="button-1"><a href="sign_up_name_3.html">Next</a></button>
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 signup text-center">
+					<a href="sign_up_telefono_1.html" class="linkanterior"><i class="fa fa-chevron-left flechaleft" aria-hidden="true" href="index.html"></i></a>					
+					<form>
+						<h3 class="titulo">Your code here</h3>
+						<h5 class="subtitulo">Join now free ride credit</h5>
+						<hr>
+						<p><em><strong>LAB- </strong></em><input type="text" name="codigo" id="input-cod" placeholder="" required/></p><br>
+						<h4 class="subtitulo">Create user</h4>
+						<span class="glyphicon glyphicon-user" aria-hidden="true"> <input type="text" name="usuario" id="user" placeholder="" required maxlength="12" /></span>
+						<a href="sign_up_name_3.html"><input type="submit" id="submitBtnCod" value="Next" src="sign_up_name_3.html"></a>
+					</form>
+				</div>
+				<div id="errorMessage"></div>
 			</div>
 		</div>
-	</div>
+	</section>	
 	
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
