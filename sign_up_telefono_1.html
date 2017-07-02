@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es_CL">
-<head>
-	<title>Lyft App</title>
+<head>    
+    <title>Lyft App</title>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +15,43 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!-- Fontawesome -->
 	<script src="https://use.fontawesome.com/d2c9b2c5c1.js"></script>
+
+	<link rel="stylesheet" href="assets/css/style.css">
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="chosen.css">
+	<link rel="stylesheet" href="ImageSelect.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<!-- Plugins Jquery Choosen -->
+	<script src="chosen.jquery.js"></script>
+	<script src="ImageSelect.jquery.js"></script>
+
+</head>
+<body>
+    <div class="container">	
+    	<div class="row">
+			<div class="col-xs-12 signup text-center">
+				<a href="index.html" class="linkanterior"><i class="fa fa-chevron-left flechaleft" aria-hidden="true"></i></a>
+					<h3 class="titulo">Sign up</h3>
+					<h5 class="subtitulo">Join now free ride credit</h5>
+					<hr>
+						<select class="my-select">
+ 							<option selected="selected" data-img-src="assets/img/flag-chile.png"> Chile +56</option>
+ 							<option data-img-src="assets/img/flag_pe.png"> Peru +57</option>
+ 							<option data-img-src="assets/img/flag_mex.png"> Mexico +58</option>
+ 							<option data-img-src="assets/img/flag-arg.png"> Argentina +59</option>
+ 							<option data-img-src="assets/img/flag-ven.png"> Venezuela +59</option>
+						</select>
+						<input type="number" name="telefono" id="telefono" placeholder="11234567"/>
+						<p class="textuser">We'll send a text to verify your phone</p>
+						<input type="submit" id="submitButton" value="Next">
+					<div id="errorMessage"></div>
+			</div>
+		</div>
+	</div>
+
+	<script src="assets/js/main.js"></script> 
+</body>
 	<!--pluggin jquery-->
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/media.css">
@@ -59,4 +96,5 @@
 <!-- Bootstrap Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
+
 </html>
