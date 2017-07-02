@@ -34,6 +34,21 @@ $(document).ready(function () {
 		var fieldsMissing = "";
 
 		if ($("#telefono").val().length != 9) {
+
+			errorMessage += "<p> Your phone Number is not valid</p>";
+		}
+
+		if ($("#telefono").val() == "") {
+
+			fieldsMissing += "<br>Telefono";
+		}
+	
+		if (fieldsMissing != "") {
+			errorMessage += "<p>The following field(s) are missing" + fieldsMissing;
+		}	
+
+		if ($.isNumeric($("#telefono").val()) == false) {
+			errorMessage += "<p> Your phone Number is not valid</p>";
 			e.preventDefault();
 			errorMessage += "<p> Your phone Number is not valid</p>";
 		}
@@ -85,11 +100,24 @@ $(document).ready(function () {
 
 		if (fieldsMissing != "") {
 			errorMessage += "<p>The following field(s) are missing" + fieldsMissing;
+
 		}
 
 		if (errorMessage != "") {
 			$("#errorMessage").html(errorMessage);
 		} else {
+			
+			alert("Your code to enter is:" + " LAB-" + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10));
+			$("#successMessage").show();
+			$("#errorMessage").hide();
+		}
+	})
+
+	$(".button-1").click(function(){
+		if("#validador" == " "){
+			alert("Ingrese código");
+		}
+	})
 			$("#errorMessage").hide();
 			e.preventDefault();
 			window.location = "sign_up_name_3.html";
@@ -157,5 +185,5 @@ $(document).ready(function () {
 			e.preventDefault();
 			window.location = "map_4.html";
 		}
-	});
 });
+
