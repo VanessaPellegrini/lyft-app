@@ -150,8 +150,50 @@ $(document).ready(function(){
 		}
 	});
 	/*plugin chosen parte vane perez*/
-	$(".my-select").chosen({width:"15%"});
+	/*$(".my-select").chosen({width:"15%"});*/
+
+	/***** seccion profile *****/
+	/*localStorage.setItem("userName");
+	localStorage.setItem("name");
+	localStorage.setItem("email");
+
+	var userName = localStorage.getItem("userName");
+	*/
+	/* Mostramos Datos En Div */
+	$("#user-data").append("<mark class='lead text-center'>User Name</mark>")
+	$("#user-data").append("</br><span class='glyphicon glyphicon-user' aria-hidden='true'>Nombre</span>"); //storage Name
+	$("#user-data").append("</br><span class='glyphicon glyphicon-home' aria-hidden='true'>Estoy en </span>");//storage lugar inicio
+	$("#user-data").append("</br><span class='glyphicon glyphicon-earphone' aria-hidden='true'>Mi número es </span>"); //storage numero
+	$("#user-data").append("</br><span class='glyphicon glyphicon-globe' aria-hidden='true'>Me dirijo a </span>");//storage lugar llegada
+	
+
+	$("#btn-modal").click(function(){  //.submit()
+		$("#user-data").fadeOut();
+		$(".modal-data").fadeIn();
+	});
+
 });
+
+/*evento para pasar a la segunda parte de sign up
+*Al dar click a aceptar del alert redireccionar a window.location.replace("ingresar_codigo_2.html");
+
+/* 
+
+function guardarDatos(){
+	localStorage.nombre= document.getElementById("nombre").value;
+	localStorage.fecha= document.getElementById("fecha").value;
+	localStorage.city= document.getElementById("city").value;
+	localStorage.music= document.getElementById("music").value;
+}
+
+function recuperarDatos(){
+		document.getElementById("datos").innerHTML = "Nombre: " + localStorage.nombre + "<br/> Date: " + localStorage.fecha + "<br/> From: " + localStorage.city + "<br/> Music favorite: " + localStorage.music;
+}
+
+
+*/
+
+
 /*Mapa*/
 var map;
 var miUbicacion;
@@ -225,3 +267,4 @@ function openNav() {
 	function closeNav() {
     	document.getElementById("myNav").style.width = "0%";
 	}
+
