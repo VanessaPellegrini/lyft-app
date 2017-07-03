@@ -9,11 +9,6 @@ $(document).ready(function(){
 			e.preventDefault();
 			errorMessage += "<p> Your phone Number is not valid</p>";
 		}
-
-		if ($("#telefono").val() == "") {
-			e.preventDefault();
-			fieldsMissing += "<br>Telefono";
-		}
 	
 		if (fieldsMissing != "") {
 			e.preventDefault();
@@ -73,7 +68,6 @@ $(document).ready(function(){
 		if (errorMessage != "") {
 			$("#errorMessage").html(errorMessage);
 		} else {
-			alert("Your code to enter is:" + " LAB-" + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10));
 			e.preventDefault();
 			window.location = "sign_up_name_3.html";
 		}
