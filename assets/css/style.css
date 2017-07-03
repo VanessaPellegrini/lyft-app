@@ -175,3 +175,7 @@ input.checkagree{
 a.linkanterior{
 	color: black;
 }
+
+input#q2_1 {
+    margin: 0 auto;
+}
