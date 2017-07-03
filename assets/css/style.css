@@ -245,4 +245,7 @@ menu {
     background-color: white;
     border-color: #adadad;
 }
-
+.arrow-circle img:hover{
+    background-color: #8179A8;
+    border-color: #adadad;
+}
