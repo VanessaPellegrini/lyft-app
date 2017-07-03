@@ -53,19 +53,19 @@ $(document).ready(function(){
         		var o = $(this).val();
 
         		if (o == 1) {
-            		$('#telefono').attr("placeholder", "Ej.: 123456789 (solo 9 digitos)").placeholder();
+            		$('#telefono').attr("placeholder", "(solo 9 digitos)").placeholder();
         		}
         		if (o == 2) {
-            		$('#telefono').attr("placeholder", "Ej.: 123456789 (solo 9 digitos)").placeholder();
+            		$('#telefono').attr("placeholder", "(solo 9 digitos)").placeholder();
         		}        	
         		if (o == 3) {
-            		$('#telefono').attr("placeholder", "Ej.: 1234567890 (solo 10 digitos)").placeholder();
+            		$('#telefono').attr("placeholder", "(solo 10 digitos)").placeholder();
         		}
         		if (o == 4) {
-            		$('#telefono').attr("placeholder", "Ej.: 123456789 (solo 9 digitos)").placeholder();
+            		$('#telefono').attr("placeholder", "(solo 9 digitos)").placeholder();
         		} 	
         		if (o == 5) {
-            		$('#telefono').attr("placeholder", "Ej.: 123456789 (solo 9 digitos)").placeholder();
+            		$('#telefono').attr("placeholder", "(solo 9 digitos)").placeholder();
         		}
     		})
     		$('input[placeholder]').placeholder();
@@ -170,8 +170,9 @@ $(document).ready(function(){
 			window.location = "map_4.html";
 		}
 	});
+
 	/*plugin chosen parte vane perez*/
-	/*$(".my-select").chosen({width:"15%"});*/
+	$(".selection").chosen({width:"30%"});
 
 	/***** seccion profile *****/
 	/*localStorage.setItem("userName");
