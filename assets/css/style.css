@@ -112,6 +112,17 @@ select.countries{
     margin-bottom: 25px;
 	height: 30px;
 }
+
+#errorMessage{
+    background-color: #FC1EBD;
+    font-size: 18px;
+    text-align: center;
+    z-index: 1000;
+    margin-top: -260px;
+    color: #fff;
+    border-radius: 6px;
+}
+
 /*estilos paises*/
 fieldset {
    border: 0;
