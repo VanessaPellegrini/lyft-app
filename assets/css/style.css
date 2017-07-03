@@ -234,6 +234,7 @@ input#input-cod {
 h4.subtitulo{
     font-size: 14px;
 }
+
 /*Estilos index 2*/
 
 input#submitBtnCod{
@@ -266,6 +267,11 @@ input#email {
     margin-bottom: 2px;
     border: 1px solid gray;
     width: 92%;
+}
+
+input#checkbox {
+    display: inline-block;
+    margin-top: 20px;
 }
 
 /*Mapa*/
