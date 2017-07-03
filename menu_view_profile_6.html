@@ -24,61 +24,69 @@
 	<section id="profile">
 		<div class="container-fluid">
 			<div class="row">
-			<div id="fotoprof" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-right">
-
-					<button type="button" class="btn btn-primary" id="edit" onclick="guardarDatos()" value="Guardar datos" data-toggle="modal" href="#ventana1" >Edit Profile</button>
-
+				<div id="fotoprof" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-right">
+						<button type="button" class="btn btn-primary" id="edit" onclick="guardarDatos()" value="Guardar datos" data-toggle="modal" href="#ventana1" >Edit Profile</button>
 				</div><!-- Cierre columna -->
-			</div><!-- Cierre row -->
-		</div><!-- Cierre contenedor -->
-	</section>
-	<section class="container">
-		<div class="modal fade col-lg-12 col-md-12 col-sm-12 col-xs-12" id="ventana1">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<div class="mostrar">
-							<div class="row">
-								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 datos text-center">
-									<div class="form-group">
-										<label for="usr">Name:</label>
-										<input type="text" class="form-control1" id="nombre">
+				<div class="modal fade col-lg-12 col-md-12 col-sm-12 col-xs-12" id="ventana1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<div class="mostrar">
+									<div class="row">
+										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 datos text-center">
+											<div class="form-group">
+												<label for="usr">Name:</label>
+												<input type="text" class="form-control1" id="nombre">
+											</div>
+										</div>
 									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 datos text-center">
-									<div class="form-group">
-										<label for="usr">Date:</label>
-										<input type="text" class="form-control1" id="fecha">
+									<div class="row">
+										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 datos text-center">
+											<div class="form-group">
+												<label for="usr">Date:</label>
+												<input type="text" class="form-control1" id="fecha">
+											</div>
+										</div>
 									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 datos text-center">
-									<div class="form-group">
-										<label for="usr">From city:</label>
-										<input type="text" class="form-control1" id="city">
+									<div class="row">
+										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 datos text-center">
+											<div class="form-group">
+												<label for="usr">From city:</label>
+												<input type="text" class="form-control1" id="city">
+											</div>
+										</div>
 									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 datos text-center">
-									<div class="form-group">
-										<label for="usr">Favorite Music:</label>
-										<input type="text" class="form-control1" id="music">
+									<div class="row">
+										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 datos text-center">
+											<div class="form-group">
+												<label for="usr">Favorite Music:</label>
+												<input type="text" class="form-control1" id="music">
+											</div>
+										</div>
 									</div>
+									<div class="row">
+										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 datos text-center">
+											<div class="form-group">
+												<label for="exampleInputFile">File input</label>
+												<input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+												<small id="fileHelp" class="form-text text-muted">Attachments</small>
+											</div>
+										</div>
+									</div>
+									
 								</div>
-							</div>
+							</div>	
 						</div>
 					</div>
 					<!--  VENTANA -->
 					<div class="modal-footer">
 						<button type="button" class="btn btn-success" data-dismiss="modal">Cerrar</button>
 					</div>
-				</div>
+				</div><!-- Cierre row -->
 			</div>
-		</div>
+		</div><!-- Cierre contenedor -->
+	</section>
+	<section class="container">
 		<div class="row">
 			<div id="user-data" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
 		</div>
