@@ -218,3 +218,8 @@ function lineaRuta(directionsService, directionsDisplay) {
             }
         });
 }
+/*Iconos superiores*/
+var regalo = document.getElementById("regalo").addEventListener("click", function () {
+	alert("¡Felicitaciones! Tienes $5000 pesos de descuento en tu primer viaje");
+});
+
