@@ -50,6 +50,33 @@ $(document).ready(function(){
 			window.location = "ingresar_codigo_2.html";
 		}
 	});
+	
+	/********************************* AGREGADO POR VANESSA PEREZ *************************************/
+	/*funcion que cambia los placeholder a medida que se elige una opcion*/
+		$(function () {
+    		$('.selection').change(function () {
+        		var o = $(this).val();
+
+        		if (o == 1) {
+            		$('#telefono').attr("placeholder", "Ej.: 123456789 (solo 9 digitos)").placeholder();
+        		}
+        		if (o == 2) {
+            		$('#telefono').attr("placeholder", "Ej.: 123456789 (solo 9 digitos)").placeholder();
+        		}        	
+        		if (o == 3) {
+            		$('#telefono').attr("placeholder", "Ej.: 1234567890 (solo 10 digitos)").placeholder();
+        		}
+        		if (o == 4) {
+            		$('#telefono').attr("placeholder", "Ej.: 123456789 (solo 9 digitos)").placeholder();
+        		} 	
+        		if (o == 5) {
+            		$('#telefono').attr("placeholder", "Ej.: 123456789 (solo 9 digitos)").placeholder();
+        		}
+    		})
+    		$('input[placeholder]').placeholder();
+    	});
+
+/*********************************************************************************************************/
 	/*verificacion del codigo y creacion del usuario*/
 	$("#submitBtnCod").click(function(e){
 		var errorMessage = "";
