@@ -192,3 +192,34 @@ function initMap() {
     var funcionError = function (error) {
         alert("Tenemos un problema para encontrar tu ubicación");
     }
+    function initialize() {//autocompletar direcciones
+        var inputDestino = document.getElementById('destino');
+        var autocompletados = new google.maps.places.Autocomplete(inputDestino);
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+    buscar();
+};
+document.getElementById("ruta").addEventListener("click", function () {
+    var directionsDisplay = new google.maps.DirectionsRenderer();
+    var directionsService = new google.maps.DirectionsService();
+
+    lineaRuta(directionsService, directionsDisplay);
+});
+
+
+function lineaRuta(directionsService, directionsDisplay) {      
+        console.log(miUbicacion);
+        directionsService.route({
+        origin: { lat: latitud, lng: longitud },
+        destination: document.getElementById('destino').value,
+        travelMode: "DRIVING"
+    },
+        function (response, status) {
+            if (status === "OK") {
+                directionsDisplay.setDirections(response);
+                directionsDisplay.setMap(map);
+            } else {
+                window.alert("Ruta no disponible" + status);
+            }
+        });
+}
