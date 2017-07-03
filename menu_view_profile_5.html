@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es_CL">
+<head>
+	<title>Lyft App</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Lyft App">
+	<meta name="author" content="LYFT APP">
+	<!-- jQuey smoothness -->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet"> 
+	<!-- Bootstrap Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Fontawesome -->
+	<script src="https://use.fontawesome.com/d2c9b2c5c1.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/media.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/common.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+	<section id="profile">
+		<div class="container-fluid">
+			<div class="row">
+				<div id="fotoprof" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-right">
+						<button type="button" class="btn btn-primary" id="edit" onclick="guardarDatos()" value="Guardar datos" data-toggle="modal" href="#ventana1" >Edit Profile</button>
+				</div><!-- Cierre columna -->
+				<div class="modal fade col-lg-12 col-md-12 col-sm-12 col-xs-12" id="ventana1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<div class="mostrar">
+									<div class="row">
+										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 datos text-center">
+											<div class="form-group">
+												<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+												<label for="usr">Name:</label>
+												<input type="text" class="form-control1" id="nombre">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 datos text-center">
+											<div class="form-group">
+												<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+												<label for="usr">Date:</label>
+												<input type="text" class="form-control1" id="fecha">
+											</div>
+											
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 datos text-center">
+											<div class="form-group">
+												<span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+												<label for="usr">From city:</label>
+												<input type="text" class="form-control1" id="city">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 datos text-center">
+											<div class="form-group">
+												<span class="glyphicon glyphicon-music" aria-hidden="true"></span>
+												<label for="usr">Favorite Music:</label>
+												<input type="text" class="form-control1" id="music">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 datos text-center">
+											<div class="form-group">
+												<span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
+												<label for="exampleInputFile">Image input</label>
+												<input type="file" class="form-control-file" id="inputFile" aria-describedby="fileHelp">
+												<small id="fileHelp" class="form-text text-muted">Attachments</small>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>	
+						</div>
+					</div>
+					<!--  VENTANA -->
+					<div class="modal-footer">
+						<button id="btn-modal" type="button" class="btn btn-success" data-dismiss="modal">Cerrar</button>
+					</div>
+				</div><!-- Cierre row -->
+			</div>
+		</div><!-- Cierre contenedor -->
+	</section>
+	<section class="container">
+		<div class="row">
+			<div id="user-data" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+				
+
+			</div>
+		</div>
+		<div class="row">
+			<div id="modal-data" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hide">
+				
+
+			</div>
+		</div>
+	</section>
+<!-- 
+
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+				<p id="datos"></p>
+				<button type="button" class="btn btn-primary" onclick="recuperarDatos()" value="Recuperar datos">Your Profile</button>
+			</div>
+		</div>
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+
+			</div>
+		</div>
+	</footer>
+-->
+<!-- jQuery 3.2.1-->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!-- jQuery ui-->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Bootstrap Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
