@@ -221,3 +221,6 @@ input#email {
     margin-top: 10%;
     margin-right: 10%;
 }
+#inputFile{
+    padding-left: 80px;
+}
