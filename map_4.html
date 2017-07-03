@@ -20,34 +20,67 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/common.css">
 </head>
 <body>
-<menu>
-	<div class="container">
-		<div class="row">
-			
+<section id="mapa" >
+	<div class="container container-mapa">
+		<div class="hidden-lg hidden-md col-sm-12 col-xs-12 text-center mapa-lift" id="map">
+			<!--mapa-->
 		</div>
-	</div>
-</menu>
-<header>
-	<div class="container">
 		<div class="row">
-			
-		</div>
-	</div>
-</header>
-<section id="" >
-	<div class="container">
-		<div class="row">
-			
+			<div id="encuentrame" class="arrow-circle pull-right hidden-lg hidden-md col-sm-12 col-xs-12">
+				<img src="assets/img/location-arrow.png">
+			</div>
+			<div class="hidden-lg hidden-md text-center col-sm-12 col-xs-12 form">
+				<input class="input-destino form-control" id="destino" placeholder="Ingrese su destino"><br>
+				<button type="button" class="btn btn-default" id="ruta">Marcar Ruta</button>
+			</div>
 		</div>
 	</div>
 </section>
-<footer>
+<menu>
 	<div class="container">
-		<div class="row">
-			
+		<div class="co-lxs-12">
+			<div id="myNav" class="overlay">
+			<!-- Button to close the overlay navigation -->
+  				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  				<!-- Overlay content -->
+  					<div class="overlay-content blanco pull-left">
+  						<div class="imagen_portada">
+  							<img src="assets/img/nn.jpg" alt="" class="foto img-responsive text-center">
+							<h4 class="text-center">Nombre </h4>
+  							<a class="text-center" href="#">View Profile</a>
+  						</div>
+							<ul>
+							<li>
+								<a class="iconos" href=""><i class="fa fa-map-marker" aria-hidden="true"></i> Home</a>
+							</li>
+							<li>
+								<a class="iconos" href=""><i class="fa fa-gift" aria-hidden="true"></i> Free Rides</a>
+							</li>
+							<li>
+								<a class="iconos" href=""><i class="fa fa-clock-o" aria-hidden="true"></i> Ride history</a>
+							</li>
+							<li>
+								<a class="iconos" href=""><i class="fa fa-credit-card" aria-hidden="true"></i> Payment</a>
+							</li>
+							<li>
+								<a class="iconos" href=""><i class="fa fa-question" aria-hidden="true"></i> Help</a>
+							</li>
+							<li>
+								<a class="iconos" href=""><i class="fa fa-cog" aria-hidden="true"></i> Settings</a>
+							</li>
+							<li>
+								<a class="iconos ultimo" href=""><i class="fa fa-car" aria-hidden="true"></i> Sing up to drive</a> 
+							</li>
+							</ul>
+					</div><!-- close	 overlay-content-->
+			</div>
 		</div>
 	</div>
-</footer>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+</menu>
+
+
 <!-- jQuery 3.2.1-->
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <!-- jQuery ui-->
@@ -57,5 +90,6 @@
 <!-- Bootstrap Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjQQJ5Ev6AINQct8KF2U4pWfyB26H31zQ&libraries=places&callback=initMap"></script>
 </body>
 </html>
