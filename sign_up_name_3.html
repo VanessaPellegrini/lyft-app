@@ -7,6 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Lyft App">
 	<meta name="author" content="LYFT APP">
+	<!-- jQuey smoothness -->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
+	<!-- Google Font -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet"> 
 	<!-- Bootstrap Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -25,20 +28,33 @@
 				<h3 class="titulo">Sign up</h3>
 				<h5 class="subtitulo">Join now free ride credit</h5>
 				<hr>
-				<form>
-					<input type="text" name="name" id="name" placeholder="Fist Name      Last Name" />
-					<input type="text" name="email" id="email" placeholder="Email" />
-					<input type="checkbox" name="iagree" value="iagree" class="checkagree"> I agree to Lyft's <a href="#" class="term">Term of Service.</a>
-					<input type="submit" id="submitButton" value="Next">
+				<form action="map_4.html" id="form1" method="post" data-ajax="false" class="ui-body ui-body-a ui-corner-all">	
+					<input type="text" name="name" id="name" placeholder="Fist Name      Last Name" required/>
+					<input type="email" name="name" id="email" placeholder="Email" required/><br>
+					<input type='checkbox' name='q2[]' class="checkbox" id='q2_1' value='1'>I agree to Lyft's<a href="#" class="term">Term of Service</a>		
+					<label for="q2_0"></label>
+					<input type="hidden" value="3450" name="qid">
+					<input type="hidden" value="57350.47" name="st">
+					<input type="submit" id="submitBtnEmail" value="Next">
 				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div id="errorMessage"></div>
 			</div>
 		</div>
 	</div>
 </section>
+<!-- jQuery 3.2.1-->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!-- jQuery ui-->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Bootstrap Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script type="text/javascript" src="assets/js/main.js"></script>
+<script type="text/javascript" src="assets/js/checkbox.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js"/></script>
 </body>
 </html>
