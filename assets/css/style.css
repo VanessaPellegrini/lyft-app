@@ -79,8 +79,8 @@ input#telefono {
     border: 1px solid grey;
     border-radius: 3px;
     margin-bottom: 25px;
-	height: 30px;
-    width: 160px;
+    height: 30px;
+    width: 130px;
 }
 
 select.my-select {
