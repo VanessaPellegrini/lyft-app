@@ -221,6 +221,24 @@ input#email {
     margin-top: 10%;
     margin-right: 10%;
 }
+/* Modal */
 #inputFile{
     padding-left: 80px;
+}
+
+span.glyphicon-user{
+    color:#333;
+}
+
+#user-data span{
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+#user-data mark{
+    margin-left: 150px;
+}
+
+#user-data{
+    margin-top: 20px;
 }
