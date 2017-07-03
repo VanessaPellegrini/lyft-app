@@ -174,25 +174,6 @@ $(document).ready(function(){
 
 });
 
-/*evento para pasar a la segunda parte de sign up
-*Al dar click a aceptar del alert redireccionar a window.location.replace("ingresar_codigo_2.html");
-
-/* 
-
-function guardarDatos(){
-	localStorage.nombre= document.getElementById("nombre").value;
-	localStorage.fecha= document.getElementById("fecha").value;
-	localStorage.city= document.getElementById("city").value;
-	localStorage.music= document.getElementById("music").value;
-}
-
-function recuperarDatos(){
-		document.getElementById("datos").innerHTML = "Nombre: " + localStorage.nombre + "<br/> Date: " + localStorage.fecha + "<br/> From: " + localStorage.city + "<br/> Music favorite: " + localStorage.music;
-}
-
-
-*/
-
 
 /*Mapa*/
 var map;
@@ -267,4 +248,45 @@ function openNav() {
 	function closeNav() {
     	document.getElementById("myNav").style.width = "0%";
 	}
+
+/***** seccion profile *****/
+	$("#submitBtnCod").click(function(e){
+		var valor =  $(this).val();
+	})
+	/*localStorage.setItem("userName");
+	localStorage.setItem("name");
+	localStorage.setItem("email");
+
+	var userName = localStorage.getItem("userName");
+	*/
+	/* Mostramos Datos En Div */
+	$(".modal-data").fadeOut();
+		localStorage.user = $("#user").val();
+		localStorage.nombre = $("#name").val();
+		localStorage.email = $("#email").val();
+		localStorage.telefono = $("#telefono").val();
+		localStorage.destino = $("#destino").val();
+
+	$("#user").val();
+	$("#name").val();
+	$("#user-data").append("<mark class='lead text-center'>"+localStorage.user+"</mark>")
+	$("#user-data").append("</br><span class='glyphicon glyphicon-user' aria-hidden='true'> Me llamo "+localStorage.nombre+"</span>"); //storage Name
+	$("#user-data").append("</br><span class='glyphicon glyphicon-envelope'> Mi email es "+localStorage.email+"</span>");//storage email
+	$("#user-data").append("</br><span class='glyphicon glyphicon-home' aria-hidden='true'> Estoy en </span>");//storage lugar inicio
+	$("#user-data").append("</br><span class='glyphicon glyphicon-earphone' aria-hidden='true'> Mi número es "+localStorage.telefono+"</span>"); //storage numero
+	$("#user-data").append("</br><span class='glyphicon glyphicon-globe' aria-hidden='true'> Me dirijo a "+localStorage.destino+"</span>");//storage lugar llegada
+	
+
+	$("#btn-modal").click(function(){  //.submit()
+		$("#user-data").fadeOut();
+		$("#modal-data").fadeIn();
+
+		/*$("#modal-data").append("<span class='glyphicon glyphicon-user' aria-hidden='true'>"+ +"</span>");
+		$("#modal-data").append("</br><span class='glyphicon glyphicon-user' aria-hidden='true'>"+modalDate+"</span>");
+		$("#modal-data").append("</br><span class='glyphicon glyphicon-user' aria-hidden='true'>"+modalCity+"</span>");
+		$("#modal-data").append("</br><span class='glyphicon glyphicon-user' aria-hidden='true'>"+modalMusic+"</span>");
+		*/
+		
+		
+	});
 
