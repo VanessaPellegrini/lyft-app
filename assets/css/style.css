@@ -30,6 +30,7 @@ gris intenso sign up to drive: #728098
 #imagen img{
     margin-top: 50px;
     margin-bottom: 300px;/*vane modifica esto para ver como se ve porfa*/
+    width: 80px;
 }
 .boton{
     background-color: transparent;
