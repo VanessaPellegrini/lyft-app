@@ -251,7 +251,9 @@ input.checkagree{
 a.linkanterior{
 	color: black;
 }
-
+input#q2_1 {
+    margin: 0 auto;
+}
 input#email {
     display: block;
     margin-bottom: 2px;
@@ -469,4 +471,3 @@ a.iconos.ultimo{
     color:white;
 }
     /*termina mi overly*/
-
