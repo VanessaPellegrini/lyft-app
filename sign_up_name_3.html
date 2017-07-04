@@ -28,17 +28,20 @@
 				<h3 class="titulo">Sign up</h3>
 				<h5 class="subtitulo">Join now free ride credit</h5>
 				<hr>
-				<form>
-					<input type="text" name="name" id="name" placeholder="Fist Name      Last Name" / required>
-					<input type="text" name="name" id="email" placeholder="Email" required/>
-					<input type="checkbox" name="iagree" value="iagree" required id="checkbox"> I agree to Lyft's <a href="#" class="term">Term of Service</a>
+				<form action="map_4.html" id="form1" method="post" data-ajax="false" class="ui-body ui-body-a ui-corner-all">	
+					<input type="text" name="name" id="name" placeholder="Fist Name      Last Name" required/>
+					<input type="email" name="name" id="email" placeholder="Email" required/><br>
+					<input type='checkbox' name='q2[]' class="checkbox" id='q2_1' value='1'>I agree to Lyft's<a href="#" class="term">Term of Service</a>		
+					<label for="q2_0"></label>
+					<input type="hidden" value="3450" name="qid">
+					<input type="hidden" value="57350.47" name="st">
+					<div class="row">
+						<div class="col-xs-12">
+							<div id="errorMessage"></div>
+						</div>
+					</div>
 					<input type="submit" id="submitBtnEmail" value="Next">
 				</form>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-12">
-				<div id="errorMessage"></div>
 			</div>
 		</div>
 	</div>
@@ -51,6 +54,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Bootstrap Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script type="text/javascript" src="assets/js/main.js"></script>
+<script type="text/javascript" src="assets/js/checkbox.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js"/></script>
 </body>
 </html>

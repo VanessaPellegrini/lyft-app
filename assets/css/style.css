@@ -17,12 +17,20 @@ gris intenso sign up to drive: #728098
     width: 100%;
     height: 100vh;   
 }
-.logo{
-	width: 100px; 
-}
+
+.logo {      /*modificación completa de la parte del logo*/
+    width: 70px;
+    position: absolute;
+    top: 2vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+} 
+
 #imagen img{
     margin-top: 50px;
     margin-bottom: 300px;/*vane modifica esto para ver como se ve porfa*/
+    width: 80px;
 }
 .boton{
     background-color: transparent;
@@ -33,6 +41,7 @@ gris intenso sign up to drive: #728098
     font-size: 20px;
     padding: 3px;   
     margin-right: 10px;
+    margin-top: 470px;/*parte arreglada de los botones por vane perez*/
     color: white;
 }
 .boton-1{
@@ -251,7 +260,9 @@ input.checkagree{
 a.linkanterior{
 	color: black;
 }
-
+input#q2_1 {
+    margin: 0 auto;
+}
 input#email {
     display: block;
     margin-bottom: 2px;
@@ -322,6 +333,56 @@ menu {
     height: 100vh;
     padding: 0;
 }
+.user-icon {
+    width: 40px;
+    position: absolute;
+    top: 2vh;
+    left: 9px;
+    right: 0;
+    margin: 0;
+}
+.user-icon img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    margin: 0;
+    right: 0;
+    z-index: 1;
+}
+.logo {
+    width: 30px;
+    position: absolute;
+    top: 2vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.logo img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    margin: 0 auto;
+    right: 0;
+    z-index: 1;
+}
+.gift-icon{
+    width: 100%;
+    position: absolute;
+    top: 2vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.gift-icon img {
+    position: absolute;
+    top: 0px;
+    width: 40px;
+    margin: 0;
+    right: 11px;
+    z-index: 1;
+}
 .form{
     position: absolute;
     left: 0px;
@@ -333,8 +394,7 @@ menu {
     position: absolute;
     left: 44vh;
     top: 66vh;
-    z-index: 1000;
-    background-image: url("../assets/img/location-arrow.png")
+    z-index: 0;
 }
 .form input{
     width: 100%;
@@ -420,4 +480,3 @@ a.iconos.ultimo{
     color:white;
 }
     /*termina mi overly*/
-     
