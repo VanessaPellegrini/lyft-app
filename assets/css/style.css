@@ -17,9 +17,16 @@ gris intenso sign up to drive: #728098
     width: 100%;
     height: 100vh;   
 }
-.logo{
-	width: 100px; 
-}
+
+.logo {      /*modificación completa de la parte del logo*/
+    width: 70px;
+    position: absolute;
+    top: 2vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+} 
+
 #imagen img{
     margin-top: 50px;
     margin-bottom: 110%;
