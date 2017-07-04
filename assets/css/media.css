@@ -15,3 +15,14 @@
 		margin-bottom: 30%;		
 	}
 }
+/*overlay*/
+@media (min-width: 375px) and (max-width: 424px){
+    .overlay a {font-size: 18px}
+    .overlay a {color: #FC1EBD}
+
+    .overlay .closebtn {
+        font-size: 20px;
+        top: 15px;
+        right: 35px;
+        }
+    }

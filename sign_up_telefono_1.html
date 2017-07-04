@@ -36,21 +36,22 @@
 					<h3 class="titulo">Sign up</h3>
 					<h5 class="subtitulo">Join now free ride credit</h5>
 					<hr>
-						<select class="my-select">
- 							<option selected="selected" data-img-src="assets/img/flag-chile.png"> Chile +56</option>
- 							<option data-img-src="assets/img/flag_pe.png"> Peru +57</option>
- 							<option data-img-src="assets/img/flag_mex.png"> Mexico +58</option>
- 							<option data-img-src="assets/img/flag-arg.png"> Argentina +59</option>
- 							<option data-img-src="assets/img/flag-ven.png"> Venezuela +59</option>
+						<select class="selection">
+ 							<option selected="selected" data-img-src="assets/img/flag-chile.png" value="1"> Chile +56</option><!--agregar sólo los values en todos los option que son necesarios para la funcionalidad del placeholder-->
+ 							<option data-img-src="assets/img/flag_pe.png" value="2"> Peru +51</option>
+ 							<option data-img-src="assets/img/flag_mex.png" value="3"> Mexico +52 1</option>
+ 							<option data-img-src="assets/img/flag-arg.png" value="4"> Argentina +54</option>
+ 							<option data-img-src="assets/img/flag-ven.png" value="5"> Venezuela +58 4</option>
 						</select>
-						<input type="number" name="telefono" id="telefono" placeholder="11234567"/>
+						<input type="number" name="telefono" id="telefono" placeholder="(solo 9 digitos)"/>
 						<p class="textuser">We'll send a text to verify your phone</p>
+						<div id="errorMessage"></div>
 						<input type="submit" id="submitButton" value="Next">
-					<div id="errorMessage"></div>
 			</div>
 		</div>
 	</div>
+	<script src="assets/js/jquery.placeholder.min.js"></script><!--agregar este link que es necesario para la funcionalidad del placeholder-->
+	<script src="assets/js/main.js"></script>
 
-	<script src="assets/js/main.js"></script> 
 </body>
 </html>

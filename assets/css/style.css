@@ -15,7 +15,7 @@ gris intenso sign up to drive: #728098
     -moz-background-size: cover;
     -o-background-size: cover;    
     width: 100%;
-    height: auto;   
+    height: 100vh;   
 }
 .logo{
 	width: 100px; 
@@ -45,9 +45,22 @@ gris intenso sign up to drive: #728098
     padding: 5px 15px;  
     margin-bottom: 20px;
 }
+
+a.textoinicio{
+    color: white;
+}
+
+a:hover{
+    text-decoration: none; 
+}
+
+.boton-1:hover{
+    background-color: #352782; 
+}
 a{
     color: white;
 }
+
 /*Estilos Sign Up Teléfono*/
 h3.titulo {
     margin-top: 20px;
@@ -65,8 +78,14 @@ input#telefono {
     border: 1px solid grey;
     border-radius: 3px;
     margin-bottom: 25px;
-	height: 30px;
-    width: 210px;
+    height: 30px;
+    width: 130px;
+}
+
+select.my-select {
+    border: 1px solid grey;
+    border-radius: 3px;
+    height: 30px;
 }
 
 input#telefono[type=number]::-webkit-inner-spin-button, 
@@ -76,6 +95,7 @@ input#telefono[type=number]::-webkit-outer-spin-button {
     appearance: none;
     margin: 0; 
 }
+
 #successMessage {
 	display: none;
 	font-size: 70%;
@@ -92,6 +112,7 @@ input#telefono[type=number]::-webkit-outer-spin-button {
     height: 60px;
     font-size: 20px;
 }
+
 input#submitBtnEmail {
     background-color: #FC1EBD;
     border-bottom: none;
@@ -112,6 +133,17 @@ select.countries{
     margin-bottom: 25px;
 	height: 30px;
 }
+
+#errorMessage{
+    background-color: #FC1EBD;
+    font-size: 14px;
+    text-align: center;
+    z-index: 1000;
+    margin-top: 6px;
+    color: #fff;
+    border-radius: 6px;
+}
+
 /*estilos paises*/
 fieldset {
    border: 0;
@@ -132,6 +164,7 @@ label {
 .ui-icon.video {
   background: url("../img/cl.png") 0 0 no-repeat;
 }
+
 .ui-icon.podcast {
     background: url("../img/flag_mex.png") 0 0 no-repeat;
 }
@@ -174,6 +207,24 @@ input#email{
 a.term{
 	color: #337ab7;
 }
+input#user {
+    height: 30px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
+    text-indent:20px;
+}
+
+input#input-cod {
+    border: 1px solid grey;
+    border-radius: 3px;
+    height: 30px;
+    text-indent:20px;
+}
+
+h4.subtitulo{
+    font-size: 14px;
+}
 /*Estilos index 2*/
 
 input#submitBtnCod{
@@ -184,14 +235,14 @@ input#submitBtnCod{
     width: 100%;
     height: 60px;
     font-size: 20px;
-    margin-top: 100px;
+    margin-top: 55px;
 }
 
 span.glyphicon-user{
     color: #FC1EBD;
     font-size: 15px;
 }
-=======
+
 input.checkagree{
 	margin-top: 30px;
 	margin-bottom: 60px;
@@ -200,11 +251,53 @@ input.checkagree{
 a.linkanterior{
 	color: black;
 }
+
 input#email {
     display: block;
     margin-bottom: 2px;
     border: 1px solid gray;
     width: 92%;
+}
+input#checkbox {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*profile*/
+
+#fotoprof{
+    background-image: url(../img/profile.JPG);
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+
+}
+
+#edit{
+    margin-top: 10%;
+    margin-right: 10%;
+}
+/* Modal */
+#inputFile{
+    padding-left: 80px;
+}
+
+span.glyphicon-user{
+    color:#333;
+}
+
+#user-data span{
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+#user-data mark{
+    margin-left: 150px;
+}
+
+#user-data{
+    margin-top: 20px;
 }
 /*Mapa*/
 menu {
@@ -311,3 +404,69 @@ menu {
     background-color: white;
     border-color: #adadad;
 }
+/*overlay*/
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.foto{
+    align-items: center;
+    width: 100%;
+    border: 3px solid white;
+}
+.iconos{
+    border: 1px solid #EFEFF4;
+    margin:8px;
+}
+.overlay-content {
+    position: relative;
+    top: 2%;
+    width: 100%;
+    margin-top: 5px;
+}
+.overlay a {
+    padding: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    color:#728098;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color:#FC1EBD;
+}
+.blanco{
+    padding: 20px 0px;
+    background-color: whitesmoke;
+    width: 280px;
+    height: 580px;
+
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+    
+.ultimo{
+    background-color: #728098;
+    color:white;
+    width: 95%;
+}
+    
+a.iconos.ultimo{
+        
+    color:white;
+}
+    /*termina mi overly*/
+

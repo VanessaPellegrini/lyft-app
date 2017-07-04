@@ -9,11 +9,6 @@ $(document).ready(function(){
 			e.preventDefault();
 			errorMessage += "<p> Your phone Number is not valid</p>";
 		}
-
-		if ($("#telefono").val() == "") {
-			e.preventDefault();
-			fieldsMissing += "<br>Telefono";
-		}
 	
 		if (fieldsMissing != "") {
 			e.preventDefault();
@@ -50,6 +45,33 @@ $(document).ready(function(){
 			window.location = "ingresar_codigo_2.html";
 		}
 	});
+	
+	/********************************* AGREGADO POR VANESSA PEREZ *************************************/
+	/*funcion que cambia los placeholder a medida que se elige una opcion*/
+		$(function () {
+    		$('.selection').change(function () {
+        		var o = $(this).val();
+
+        		if (o == 1) {
+            		$('#telefono').attr("placeholder", "(solo 9 digitos)").placeholder();
+        		}
+        		if (o == 2) {
+            		$('#telefono').attr("placeholder", "(solo 9 digitos)").placeholder();
+        		}        	
+        		if (o == 3) {
+            		$('#telefono').attr("placeholder", "(solo 10 digitos)").placeholder();
+        		}
+        		if (o == 4) {
+            		$('#telefono').attr("placeholder", "(solo 9 digitos)").placeholder();
+        		} 	
+        		if (o == 5) {
+            		$('#telefono').attr("placeholder", "(solo 9 digitos)").placeholder();
+        		}
+    		})
+    		$('input[placeholder]').placeholder();
+    	});
+
+/*********************************************************************************************************/
 	/*verificacion del codigo y creacion del usuario*/
 	$("#submitBtnCod").click(function(e){
 		var errorMessage = "";
@@ -73,7 +95,6 @@ $(document).ready(function(){
 		if (errorMessage != "") {
 			$("#errorMessage").html(errorMessage);
 		} else {
-			alert("Your code to enter is:" + " LAB-" + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10));
 			e.preventDefault();
 			window.location = "sign_up_name_3.html";
 		}
@@ -149,77 +170,71 @@ $(document).ready(function(){
 			window.location = "map_4.html";
 		}
 	});
+
 	/*plugin chosen parte vane perez*/
-	$(".my-select").chosen({width:"15%"});
+	$(".selection").chosen({width:"30%"});
+
+	/***** seccion profile *****/
+	/*localStorage.setItem("userName");
+	localStorage.setItem("name");
+	localStorage.setItem("email");
+
+	var userName = localStorage.getItem("userName");
+	*/
+	/* Mostramos Datos En Div */
+	$("#user-data").append("<mark class='lead text-center'>User Name</mark>")
+	$("#user-data").append("</br><span class='glyphicon glyphicon-user' aria-hidden='true'>Nombre</span>"); //storage Name
+	$("#user-data").append("</br><span class='glyphicon glyphicon-home' aria-hidden='true'>Estoy en </span>");//storage lugar inicio
+	$("#user-data").append("</br><span class='glyphicon glyphicon-earphone' aria-hidden='true'>Mi número es </span>"); //storage numero
+	$("#user-data").append("</br><span class='glyphicon glyphicon-globe' aria-hidden='true'>Me dirijo a </span>");//storage lugar llegada
+	
+
+	$("#btn-modal").click(function(){  //.submit()
+		$("#user-data").fadeOut();
+		$(".modal-data").fadeIn();
+	});
+/***** seccion profile *****/
+	$("#submitBtnCod").click(function(e){
+		var valor =  $(this).val();
+	})
+	/*localStorage.setItem("userName");
+	localStorage.setItem("name");
+	localStorage.setItem("email");
+
+	var userName = localStorage.getItem("userName");
+	*/
+	/* Mostramos Datos En Div */
+	$(".modal-data").fadeOut();
+		localStorage.user = $("#user").val();
+		localStorage.nombre = $("#name").val();
+		localStorage.email = $("#email").val();
+		localStorage.telefono = $("#telefono").val();
+		localStorage.destino = $("#destino").val();
+
+	$("#user").val();
+	$("#name").val();
+	$("#user-data").append("<mark class='lead text-center'>"+localStorage.user+"</mark>")
+	$("#user-data").append("</br><span class='glyphicon glyphicon-user' aria-hidden='true'> Me llamo "+localStorage.nombre+"</span>"); //storage Name
+	$("#user-data").append("</br><span class='glyphicon glyphicon-envelope'> Mi email es "+localStorage.email+"</span>");//storage email
+	$("#user-data").append("</br><span class='glyphicon glyphicon-home' aria-hidden='true'> Estoy en </span>");//storage lugar inicio
+	$("#user-data").append("</br><span class='glyphicon glyphicon-earphone' aria-hidden='true'> Mi número es "+localStorage.telefono+"</span>"); //storage numero
+	$("#user-data").append("</br><span class='glyphicon glyphicon-globe' aria-hidden='true'> Me dirijo a "+localStorage.destino+"</span>");//storage lugar llegada
+	
+
+	$("#btn-modal").click(function(){  //.submit()
+		$("#user-data").fadeOut();
+		$("#modal-data").fadeIn();
+
+		/*$("#modal-data").append("<span class='glyphicon glyphicon-user' aria-hidden='true'>"+ +"</span>");
+		$("#modal-data").append("</br><span class='glyphicon glyphicon-user' aria-hidden='true'>"+modalDate+"</span>");
+		$("#modal-data").append("</br><span class='glyphicon glyphicon-user' aria-hidden='true'>"+modalCity+"</span>");
+		$("#modal-data").append("</br><span class='glyphicon glyphicon-user' aria-hidden='true'>"+modalMusic+"</span>");
+		*/
+		
+		
+	});
+
 });
-/*Mapa*/
-var map;
-var miUbicacion;
-var latitud, longitud;
-
-document.getElementById("encuentrame").addEventListener("click", initMap);
-function initMap() {
-    map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 5,
-        center: { lat: -9.1191427, lng: -77.0349046 },
-        mapTypeControl: false,
-        zoomControl: false,
-        streetViewControl: false
-    });
-    function buscar() {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(funcionExito, funcionError);
-        }
-    }   
-
-    var funcionExito = function (posicion) {
-        latitud = posicion.coords.latitude;
-        longitud = posicion.coords.longitude;
-        miUbicacion = new google.maps.Marker({
-            position: { lat: latitud, lng: longitud },
-            animation: google.maps.Animation.BOUNCE,
-            map: map,
-            icon: "assets/img/circulo.png"
-        });
-        map.setZoom(17);
-        map.setCenter({ lat: latitud, lng: longitud });
-    }
-    var funcionError = function (error) {
-        alert("Tenemos un problema para encontrar tu ubicación");
-    }
-    function initialize() {//autocompletar direcciones
-        var inputDestino = document.getElementById('destino');
-        var autocompletados = new google.maps.places.Autocomplete(inputDestino);
-    }
-    google.maps.event.addDomListener(window, 'load', initialize);
-    buscar();
-};
-document.getElementById("ruta").addEventListener("click", function () {
-    var directionsDisplay = new google.maps.DirectionsRenderer();
-    var directionsService = new google.maps.DirectionsService();
-
-    lineaRuta(directionsService, directionsDisplay);
-});
 
 
-function lineaRuta(directionsService, directionsDisplay) {      
-        console.log(miUbicacion);
-        directionsService.route({
-        origin: { lat: latitud, lng: longitud },
-        destination: document.getElementById('destino').value,
-        travelMode: "DRIVING"
-    },
-        function (response, status) {
-            if (status === "OK") {
-                directionsDisplay.setDirections(response);
-                directionsDisplay.setMap(map);
-            } else {
-                window.alert("Ruta no disponible" + status);
-            }
-        });
-}
-/*Iconos superiores*/
-var regalo = document.getElementById("regalo").addEventListener("click", function () {
-	alert("¡Felicitaciones! Tienes $5000 pesos de descuento en tu primer viaje");
-});
 
