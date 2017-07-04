@@ -5,8 +5,8 @@
 -->
 <!DOCTYPE html>
 <html lang="es_CL">
-<head>
-	<title>Lyft App</title>
+<head>    
+    <title>Lyft App</title>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,45 +17,41 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!-- Fontawesome -->
 	<script src="https://use.fontawesome.com/d2c9b2c5c1.js"></script>
-	<!--pluggin jquery-->
-	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/media.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/common.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="chosen.css">
+	<link rel="stylesheet" href="ImageSelect.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<!-- Plugins Jquery Choosen -->
+	<script src="chosen.jquery.js"></script>
+	<script src="ImageSelect.jquery.js"></script>
+
 </head>
 <body>
-	<section>
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 signup text-center">
-					<a href="index.html" class="linkanterior"><i class="fa fa-chevron-left flechaleft" aria-hidden="true"></i></a>
+    <div class="container">	
+    	<div class="row">
+			<div class="col-xs-12 signup text-center">
+				<a href="index.html" class="linkanterior"><i class="fa fa-chevron-left flechaleft" aria-hidden="true"></i></a>
 					<h3 class="titulo">Sign up</h3>
 					<h5 class="subtitulo">Join now free ride credit</h5>
 					<hr>
-					<form>
-						<fieldset>
-						    <label for="people">Select a Country:</label>
-						    <select name="people" id="people">
-						      <option value="1" data-class="avatar" data-style="background-image: url(&apos;http://www.gravatar.com/avatar/e42b1e5c7cfd2be0933e696e292a4d5f?d=monsterid&amp;r=g&amp;s=16&apos;);">Chile</option>
-						      <option value="2" data-class="avatar" data-style="background-image: url(&apos;http://www.gravatar.com/avatar/e42b1e5c7cfd2be0933e696e292a4d5f?d=monsterid&amp;r=g&amp;s=16&apos;);">México</option>
-						      <option value="3" data-class="avatar" data-style="background-image: url(&apos;http://www.gravatar.com/avatar/e42b1e5c7cfd2be0933e696e292a4d5f?d=monsterid&amp;r=g&amp;s=16&apos;);">Perú</option>
-						    </select>
-						</fieldset>
-						<input type="number" name="telefono" id="telefono" placeholder="11234567"/>
+						<select class="selection">
+ 							<option selected="selected" data-img-src="assets/img/flag-chile.png" value="1"> Chile +56</option><!--agregar sólo los values en todos los option que son necesarios para la funcionalidad del placeholder-->
+ 							<option data-img-src="assets/img/flag_pe.png" value="2"> Peru +51</option>
+ 							<option data-img-src="assets/img/flag_mex.png" value="3"> Mexico +52 1</option>
+ 							<option data-img-src="assets/img/flag-arg.png" value="4"> Argentina +54</option>
+ 							<option data-img-src="assets/img/flag-ven.png" value="5"> Venezuela +58 4</option>
+						</select>
+						<input type="number" name="telefono" id="telefono" placeholder="(solo 9 digitos)"/>
 						<p class="textuser">We'll send a text to verify your phone</p>
+						<div id="errorMessage"></div>
 						<input type="submit" id="submitButton" value="Next">
-					</form>
-				</div>
-				<div id="errorMessage"></div>
 			</div>
 		</div>
-	</section>
+	</div>
+	<script src="assets/js/jquery.placeholder.min.js"></script><!--agregar este link que es necesario para la funcionalidad del placeholder-->
+	<script src="assets/js/main.js"></script>
+
 </body>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!--pluggin jquery-->
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<!-- Bootstrap Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script type="text/javascript" src="assets/js/main.js"></script>
 </html>
