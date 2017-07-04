@@ -15,11 +15,6 @@ $(document).ready(function(){
 			errorMessage += "<p>The following field(s) are missing" + fieldsMissing;
 		}	
 
-		if ($.isNumeric($("#telefono").val()) == false) {
-			e.preventDefault();
-			errorMessage += "<p> Your phone Number is not valid</p>";
-		}
-
 		if ($("#telefono").val() == "") {
 			e.preventDefault();
 			fieldsMissing += "<br>Phone";
@@ -29,11 +24,6 @@ $(document).ready(function(){
 			e.preventDefault();
 			errorMessage += "<p>The following field(s) are missing" + fieldsMissing;
 		}	
-    
-		if ($.isNumeric($("#telefono").val()) == false) {
-			e.preventDefault();
-			errorMessage += "<p> Your phone Number is not valid</p>";
-		}
 
 		if (errorMessage != "") {
 			e.preventDefault();
